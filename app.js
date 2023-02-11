@@ -12,6 +12,9 @@ app.use(express.json());
 // Assign a port where the app is exposed.
 const port = process.env.PORT || 8080;
 
+app.get("/test",(req, res)=>{
+    res.send("wellcome")
+})
 app.get('/', (req, res) => {
     const APP_ID = process.env.APP_ID;
     const APP_SECRET = process.env.APP_SECRET;
