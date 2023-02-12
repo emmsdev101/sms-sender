@@ -1,10 +1,12 @@
 require('dotenv').config()
 const express = require('express');
 const cors = require('cors');
-
+const { default: axios } = require('axios');
 // Initialize the app;
 const app = express();
 
+const SHORT_CODE = 21664471 
+const SHORT_CODE_CROSS_TELCO = 225644471
 // Allows Cross-Origin Resource Sharing for this app.
 app.use(cors());
 app.use(express.json());
