@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
                 console.log(err)
                 return res.send("Something went wrong")
             }
-            if(result[0]?.account_id){
+            if(result.length > 0){
                 con.query("insert into tokens SET ?",{account_id:result[0].account_id, token:access_token},(err1, result1)=>{
                     if(err1){
                         console.log(err1)
