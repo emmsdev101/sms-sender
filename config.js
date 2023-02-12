@@ -2,7 +2,7 @@ var mysql = require('mysql2');
 
 exports.con = mysql.createConnection({
   host: "localhost",
-  user: "hasp",
+  user: "hrasp",
   password:"1234",
   database:"hrasp"
 });
